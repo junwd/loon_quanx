@@ -1,11 +1,12 @@
-#!name= Redirect
-#!desc= 最后更新时间 2022-06-30 22:48:37
-#!openUrl= https://github.com/blackmatrix7/ios_rule_script
-#!homepage= https://github.com/blackmatrix7/ios_rule_script
+#!name= 快速搜索
+#!desc= 更新时间 2022-07-6 19:07:20
+#!openUrl= https://github.com/junwd/loon_quanx
+#!author= junwd
+#!homepage= https://github.com/junwd/loon_quanx
+#!icon= https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+#!redirect= 20
 #!mitm= 1
-
-
-
+#!total= 21
 [URL Rewrite]
 # ph xxx (pornhub)
 ^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
@@ -14,7 +15,7 @@
 ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
 
 # gh xxx (GitHub)
-^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ https://github.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=github\+([^&]+).+ https://github.com/search?q=$1 302
 
 # gi xxx (Google 图片)
 ^https:\/\/duckduckgo.com\/\?q=gi\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
